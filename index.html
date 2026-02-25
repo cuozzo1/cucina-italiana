@@ -18,10 +18,7 @@
             padding: 2rem 1rem 1rem 1rem;
             text-align: center;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+        h1 { margin: 0; font-size: 2.5rem; }
         main {
             max-width: 800px;
             margin: 2rem auto;
@@ -30,90 +27,33 @@
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.07);
         }
-        h2 {
-            color: #b71c1c;
-        }
-        ul {
-            line-height: 1.7;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #f5f5f5;
-            color: #888;
-            font-size: 0.9rem;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        .gallery-item {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-        .gallery-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-        }
-        .gallery-item-caption {
-            padding: 1rem;
-            background: #fff;
-            font-weight: 500;
-            color: #b71c1c;
-            text-align: center;
-        }
-        .hero-image {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
+        h2 { color: #b71c1c; }
+        footer { text-align: center; padding: 1rem; background: #f5f5f5; color: #888; font-size: 0.9rem; }
+        .audio-wrap { text-align:center; margin: 1.5rem 0; }
+        .audio-wrap p { margin-bottom: .5rem; color: #2d2d2d; }
     </style>
 </head>
 <body>
     <header>
         <h1>Cucina Italiana</h1>
         <p>Un viaggio tra i sapori e le tradizioni d'Italia</p>
-        <img src="https://cdn.pixabay.com/photo/2014/12/21/23/48/pasta-575521_640.jpg" alt="Pasta Italiana" class="hero-image">
     </header>
     <main>
+        <h2>Musica rilassante</h2>
+        <div class="audio-wrap">
+            <p>Metti in play per ascoltare una musichetta tranquilla</p>
+            <audio controls loop>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Il tuo browser non supporta l'elemento audio.
+            </audio>
+        </div>
+
         <h2>Cos'è la cucina italiana?</h2>
         <p>
             La cucina italiana è famosa in tutto il mondo per la sua varietà, semplicità e ricchezza di sapori. Ogni regione offre specialità uniche, frutto di storia, cultura e ingredienti locali.
         </p>
+
         <h2>Piatti tipici</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2014/10/19/20/59/pizza-494645_640.jpg" alt="Pizza Napoletana">
-                <div class="gallery-item-caption">Pizza Napoletana</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2015/04/09/12/59/pasta-713641_640.jpg" alt="Pasta alla Carbonara">
-                <div class="gallery-item-caption">Pasta alla Carbonara</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2017/09/16/19/21/risotto-2755632_640.jpg" alt="Risotto alla Milanese">
-                <div class="gallery-item-caption">Risotto alla Milanese</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2017/02/15/10/39/lasagna-2068932_640.jpg" alt="Lasagne alla Bolognese">
-                <div class="gallery-item-caption">Lasagne Bolognese</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2014/10/23/18/06/tiramisu-500073_640.jpg" alt="Tiramisù">
-                <div class="gallery-item-caption">Tiramisù</div>
-            </div>
-        </div>
         <ul>
             <li><strong>Pizza Napoletana</strong> – Simbolo di Napoli, con impasto soffice e bordo alto.</li>
             <li><strong>Pasta alla Carbonara</strong> – Ricetta romana con uova, guanciale e pecorino.</li>
@@ -121,29 +61,8 @@
             <li><strong>Lasagne alla Bolognese</strong> – Strati di pasta, ragù e besciamella.</li>
             <li><strong>Tiramisù</strong> – Dolce al cucchiaio con savoiardi, caffè e mascarpone.</li>
         </ul>
+
         <h2>Ingredienti fondamentali</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2014/12/09/16/51/olive-oil-561820_640.jpg" alt="Olio di oliva">
-                <div class="gallery-item-caption">Olio Extravergine d'Oliva</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2016/04/15/18/48/red-tomato-1331239_640.jpg" alt="Pomodori">
-                <div class="gallery-item-caption">Pomodoro</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2014/12/09/16/40/basil-562069_640.jpg" alt="Basilico">
-                <div class="gallery-item-caption">Basilico Fresco</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2019/01/10/10/51/mozzarella-3925087_640.jpg" alt="Formaggi italiani">
-                <div class="gallery-item-caption">Formaggi Italiani</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2019/04/25/10/30/ham-4151907_640.jpg" alt="Salumi italiani">
-                <div class="gallery-item-caption">Salumi e Insaccati</div>
-            </div>
-        </div>
         <ul>
             <li>Olio extravergine d'oliva</li>
             <li>Pomodoro</li>
@@ -151,6 +70,7 @@
             <li>Formaggi (Parmigiano, Mozzarella, Pecorino)</li>
             <li>Salumi e insaccati</li>
         </ul>
+
         <h2>Curiosità</h2>
         <p>
             La cucina italiana è Patrimonio Immateriale dell'Umanità UNESCO e rappresenta uno stile di vita, fatto di convivialità e attenzione alla qualità.
