@@ -20,7 +20,7 @@
         }
         h1 { margin: 0; font-size: 2.5rem; }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
             padding: 2rem;
             background: #fff;
@@ -31,6 +31,22 @@
         footer { text-align: center; padding: 1rem; background: #f5f5f5; color: #888; font-size: 0.9rem; }
         .audio-wrap { text-align:center; margin: 1.5rem 0; }
         .audio-wrap p { margin-bottom: .5rem; color: #2d2d2d; }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0 1.5rem 0;
+        }
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        .gallery-item img { width:100%; height:160px; object-fit:cover; display:block; }
+        .gallery-item-caption { padding: .6rem; text-align:center; color:#b71c1c; font-weight:600; }
     </style>
 </head>
 <body>
@@ -54,6 +70,28 @@
         </p>
 
         <h2>Piatti tipici</h2>
+        <div class="gallery" aria-label="Galleria piatti tipici">
+            <div class="gallery-item">
+                <img src="images/pizza.jpg" alt="Pizza Napoletana">
+                <div class="gallery-item-caption">Pizza Napoletana</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/carbonara.jpg" alt="Pasta alla Carbonara">
+                <div class="gallery-item-caption">Pasta alla Carbonara</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/risotto.jpg" alt="Risotto alla Milanese">
+                <div class="gallery-item-caption">Risotto alla Milanese</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/lasagna.jpg" alt="Lasagne alla Bolognese">
+                <div class="gallery-item-caption">Lasagne Bolognese</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/tiramisu.jpg" alt="Tiramisù">
+                <div class="gallery-item-caption">Tiramisù</div>
+            </div>
+        </div>
         <ul>
             <li><strong>Pizza Napoletana</strong> – Simbolo di Napoli, con impasto soffice e bordo alto.</li>
             <li><strong>Pasta alla Carbonara</strong> – Ricetta romana con uova, guanciale e pecorino.</li>
@@ -63,6 +101,28 @@
         </ul>
 
         <h2>Ingredienti fondamentali</h2>
+        <div class="gallery" aria-label="Galleria ingredienti">
+            <div class="gallery-item">
+                <img src="images/olive-oil.jpg" alt="Olio Extravergine d'Oliva">
+                <div class="gallery-item-caption">Olio Extravergine d'Oliva</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/tomato.jpg" alt="Pomodoro">
+                <div class="gallery-item-caption">Pomodoro</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/basil.jpg" alt="Basilico Fresco">
+                <div class="gallery-item-caption">Basilico Fresco</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cheese.jpg" alt="Formaggi italiani">
+                <div class="gallery-item-caption">Formaggi Italiani</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/prosciutto.jpg" alt="Salumi italiani">
+                <div class="gallery-item-caption">Salumi e Insaccati</div>
+            </div>
+        </div>
         <ul>
             <li>Olio extravergine d'oliva</li>
             <li>Pomodoro</li>
